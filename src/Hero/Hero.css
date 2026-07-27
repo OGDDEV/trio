@@ -1,0 +1,81 @@
+/* Hero section */
+.front {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 58px 54px;
+}
+
+.headline {
+  flex: 1;
+  max-width: 560px;
+}
+
+.headline h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--purple-dark);
+  font-weight: 400;
+  margin: 0 0 18px 0;
+  font-size: 48px;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+}
+
+.headline h1 span {
+  color: darkgoldenrod;
+  display: block;
+  font-size: 62px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.headline button {
+  background: var(--purple-dark);
+  color: white;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 800;
+  box-shadow: 0 8px 20px rgba(216, 181, 106, 0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.headline button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(216, 181, 106, 0.34);
+}
+
+.hero-img {
+  flex: 0 0 390px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 24px;
+  padding: 18px;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 340px;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .front {
+    flex-direction: column;
+    text-align: center;
+    padding: 34px 24px;
+  }
+
+  .headline {
+    max-width: none;
+  }
+
+  .headline h1 span {
+    font-size: 44px;
+  }
+}
+hr {
+  height: 10px;
+}
+
